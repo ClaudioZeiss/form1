@@ -1,0 +1,21 @@
+<!-- app/views/greetings/say_hello.html.erb 
+<form action="/greetings" method="post">
+    <label for="name"></label>
+    <input name="name" id="name" type="text" placeholder="Ingresa tu nombre"/>
+    <br />
+    <input type="submit" name="submit" value="Saludar"/>
+</form>
+-->
+
+<!-- app/views/greetings/say_hello.html.erb -->
+<form action="/greetings" method="post">
+<!--
+con este helper, rails agrega un hidden input que contiene un token de autenticidad, 
+lo puedes revisar inspeccionando el código fuente del formulario en el browser
+-->
+<%= token_tag %>
+<label for="name"></label>
+<input name="name" id="name" type="text" placeholder="Ingresa tu nombre"/>
+<br>
+<input type="submit" name="submit" value="Saludar"/>
+</form>
