@@ -1,8 +1,10 @@
 # Grupo BOZ 
-_
+``` 
 Claudio Bahamonde
 Ariel Oppenheimer
-Claudio Zeiss_
+Claudio Zeiss
+```
+
 
 # =========================
 # Hito 4 - Requerimientos
